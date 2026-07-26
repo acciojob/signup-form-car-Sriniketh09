@@ -8,6 +8,37 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>SignUp Form</h1> <br/><br/>
+
+	<form method='post'>
+		<label for='name'>Name</label>
+		<input type='text' id='name' placeholder='Name' required/> <br/> <br/>
+		<label for='email'>Email</label>
+		<input type='email' id='email' placeholder='Email' required/> <br> <br>
+		<p>Gender</p>
+		<input type='radio' id='gender_m' name='gender' required value='Male' /> <label for='gender_m'>Male</label>
+		<input type='radio' id='gender_f' name='gender' required value='Female' /> <label for='gender_f'>Female</label> <br> <br>
+		<label for='cars'>--car brands--</label> <br>
+		<select placeholder='--Please choose an option--' id='cars' multiple aria-required>
+			<option value='Ford'>Ford</option>
+			<option value='BMW'>BMW</option>
+			<option value='BENZ'>BENZ</option>
+			<option value='Audi'>Audi</option>
+			<option value='jaguar'>Jaguar</option>
+		</select> <br><br>
+		<label for='age'>Age</label>
+		<input type='number' id='age' placeholder='Age' required> <br> <br>
+		<label for='dob'>DOB</label>
+		<input type='date' id='dob' required/> <br><br>
+		<label for='tel'>Phone Number</label>
+		<input type='tel' id='tel' placeholder='xxx-xxx-xxxx' /> <br><br>
+		<label for='password'>Password</label>
+		<input type='password' id='password' placeholder='Password' required /> <br><br>
+		<input type='checkbox' id='tos' required/>
+		<label for='tos'>I agree to the TOS</label> <br> <br><br>
+		<input type="submit" value='Submit'/>
+	</form>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
